@@ -13,5 +13,8 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header p-4 flex justify-center content-center">
+    <nav class="w-[90%]">
+      <?php get_template_part('includes/logo'); ?>
+    </nav>
   </header>
