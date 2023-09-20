@@ -1,0 +1,12 @@
+/*
+Theme Name:             Container WordPress Boilerplate
+Description:            A project starter for Container Studio Projects.
+Author:                 John Pett <john@containerstud.io>
+Version:                0.0.1
+Theme URI:              https://github.com/JohnPett/container-wordpress-boilerplate
+Bitbucket Theme URI:    https://github.com/JohnPett/container-wordpress-boilerplate
+License:                GPL-2.0
+License URI:            http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+@import url('./css/tailwind.min.css');
