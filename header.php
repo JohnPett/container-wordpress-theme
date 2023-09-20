@@ -13,8 +13,13 @@
 </head>
 
 <body>
-  <header class="header p-4 flex justify-center content-center">
-    <nav class="w-[90%]">
+  <header class="header py-8 flex content-center justify-center">
+    <nav class="w-[90%] flex content-center justify-between">
       <?php get_template_part('includes/logo'); ?>
+      <div class="flex justify-center content-center">
+        <?php get_template_part('includes/language'); ?>
+        <?php get_template_part('includes/search'); ?>
+        <?php get_template_part('includes/button'); ?>
+      </div>
     </nav>
   </header>
