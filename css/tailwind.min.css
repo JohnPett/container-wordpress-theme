@@ -497,11 +497,11 @@ video {
 .top-\[100px\] {
   top: 100px;
 }
-.mr-\[6vw\] {
-  margin-right: 6vw;
-}
 .mr-2 {
   margin-right: 0.5rem;
+}
+.mr-\[6vw\] {
+  margin-right: 6vw;
 }
 .flex {
   display: flex;
@@ -678,11 +678,6 @@ input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration { display: none; }
-
-.hover\:bg-gray-200:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
-}
 
 .hover\:opacity-50:hover {
   opacity: 0.5;
