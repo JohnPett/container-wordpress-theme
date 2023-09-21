@@ -12,10 +12,13 @@
     <?php wp_head(); ?>
 </head>
 
-<body>
-  <header class="header py-8 flex content-center justify-center">
-    <nav class="w-[90%] flex content-center justify-between">
-      <?php get_template_part('includes/logo'); ?>
+<body class="bg-gray-100">
+  <header class="header py-8 flex content-center justify-center bg-white">
+    <nav class="w-[90%] flex content-center justify-between max-w-screen-xl">
+      <div class="flex">
+        <?php get_template_part('includes/logo'); ?>
+        <?php get_template_part('includes/menu'); ?>
+      </div>
       <div class="flex justify-center content-center">
         <?php get_template_part('includes/language'); ?>
         <?php get_template_part('includes/search'); ?>
