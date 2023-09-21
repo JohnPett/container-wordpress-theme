@@ -1,3 +1,3 @@
-<button class="material-icons p-2 mx-1 ease-in-out duration-300 rounded-full hover:bg-gray-200 w-10 h-10 flex content-center justify-center text-gray-700">
+<button class="material-icons ease-in-out duration-300 hover:bg-gray-200 flex content-center justify-center text-gray-700 h-[100px] flex-wrap p-2">
   outlined_flag
 </button>

@@ -13,13 +13,13 @@
 </head>
 
 <body class="bg-gray-100">
-  <header class="header py-8 flex content-center justify-center bg-white">
-    <nav class="w-[90%] flex content-center justify-between max-w-screen-xl">
-      <div class="flex">
+  <header class="header flex content-center justify-center bg-white h-[100px]">
+    <nav class="w-[90%] flex content-center justify-between max-w-screen-xl h-full">
+      <div class="flex h-full">
         <?php get_template_part('includes/logo'); ?>
         <?php get_template_part('includes/menu'); ?>
       </div>
-      <div class="flex justify-center content-center">
+      <div class="flex justify-center content-center flex-wrap">
         <?php get_template_part('includes/language'); ?>
         <?php get_template_part('includes/search'); ?>
         <?php get_template_part('includes/button'); ?>
