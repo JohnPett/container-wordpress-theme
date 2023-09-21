@@ -6,6 +6,15 @@ function header(el) {
   return { init };
 }
 
+// js/modules/search.js
+function search(el) {
+  const search2 = el.querySelector('[type="search"]');
+  function init() {
+    search2.focus();
+  }
+  return { init };
+}
+
 // js/index.js
 var setupModules = (className, include) => {
   return [...document.getElementsByClassName(className)].map((el) => {
@@ -16,6 +25,7 @@ var setupModules = (className, include) => {
 };
 var initSite = () => {
   setupModules("header", header);
+  setupModules("search", search);
 };
 if (document.addEventListener)
   document.addEventListener("DOMContentLoaded", initSite);

@@ -1,4 +1,5 @@
 import { header } from './modules/header.js'
+import { search } from './modules/search.js'
 
 const setupModules = (className, include) => {
   return [...document.getElementsByClassName(className)].map((el) => {
@@ -10,6 +11,7 @@ const setupModules = (className, include) => {
 
 const initSite = () => {
   setupModules('header', header)
+  setupModules('search', search)
 }
 
 if (document.addEventListener) document.addEventListener('DOMContentLoaded', initSite)
