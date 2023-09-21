@@ -38,4 +38,12 @@
   if( function_exists('acf_add_options_page') ) {
     acf_add_options_page();
   }
-?>
+
+  /*
+    Add menu support
+  */
+  register_nav_menus(
+    array(
+      'primary-menu' => __( 'Primary Menu' )
+    )
+  );
