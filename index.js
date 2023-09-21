@@ -19,19 +19,26 @@ function search(el) {
       search2.style.opacity = 0;
       search2.value = "";
       submit.setAttribute("disabled", "disabled");
+      submit.style.opacity = 0;
     } else {
       container.style.height = "162px";
-      search2.style.opacity = 1;
-      search2.focus();
+      setTimeout(() => {
+        submit.style.opacity = 0.5;
+        search2.style.opacity = 1;
+        search2.focus();
+      }, 125);
     }
     open = !open;
   }
   function change() {
     console.log(search2.value);
-    if (search2.value)
+    if (search2.value) {
+      submit.style.opacity = 1;
       submit.removeAttribute("disabled");
-    else
+    } else {
+      submit.style.opacity = 0.5;
       submit.setAttribute("disabled", "disabled");
+    }
   }
   function init() {
     button.addEventListener("click", toggle);

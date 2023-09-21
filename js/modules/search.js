@@ -12,18 +12,27 @@ export function search (el) {
       search.style.opacity = 0
       search.value = ''
       submit.setAttribute('disabled', 'disabled')
+      submit.style.opacity = 0
     } else {
       container.style.height = '162px'
-      search.style.opacity = 1
-      search.focus()
+      setTimeout(() => {
+        submit.style.opacity = 0.5
+        search.style.opacity = 1
+        search.focus()
+      }, 125)
     }
     open = !open
   }
 
   function change () {
     console.log(search.value)
-    if (search.value) submit.removeAttribute('disabled')
-    else submit.setAttribute('disabled', 'disabled')
+    if (search.value) {
+      submit.style.opacity = 1
+      submit.removeAttribute('disabled')
+    } else {
+      submit.style.opacity = 0.5
+      submit.setAttribute('disabled', 'disabled')
+    }
   }
 
   function init () {
