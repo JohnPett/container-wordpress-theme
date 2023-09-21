@@ -500,6 +500,9 @@ video {
 .mr-\[6vw\] {
   margin-right: 6vw;
 }
+.mr-2 {
+  margin-right: 0.5rem;
+}
 .flex {
   display: flex;
 }
@@ -544,6 +547,9 @@ video {
 }
 .justify-between {
   justify-content: space-between;
+}
+.self-center {
+  align-self: center;
 }
 .overflow-hidden {
   overflow: hidden;

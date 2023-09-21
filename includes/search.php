@@ -1,6 +1,6 @@
-<div class="search hover:bg-gray-200 ease-in-out duration-300 cursor-pointer">
-  <div class="flex justify-between">
-    <button class="material-icons flex content-center justify-center text-gray-700 h-[100px] flex-wrap p-2">
+<div class="search cursor-pointer">
+  <div>
+    <button class="material-icons flex content-center justify-center text-gray-700 h-[100px] flex-wrap p-2 hover:opacity-50 ease-in-out duration-300 mr-2">
       search
     </button>
     <div class="bg-gray-200 absolute top-[100px] left-0 w-[100vw] flex justify-center h-0 overflow-hidden ease-in-out duration-300">
