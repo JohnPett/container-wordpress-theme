@@ -7,7 +7,7 @@
       $slug = basename($url);
       $current_slug = the_slug(false);
       $active = $slug == $current_slug ? 'active' : '';
-      echo '<li class="flex content-center flex-wrap mr-[6vw]">';
+      echo '<li class="flex content-center flex-wrap mr-[5vw]">';
         echo '<a href="'.$url.'" class="font-bold tracking-wide flex content-center flex-wrap text-sm hover:opacity-50 ease-in-out duration-300 text-gray-700 leading-none '.$active.'">';
           echo $title;
         echo '</a>';

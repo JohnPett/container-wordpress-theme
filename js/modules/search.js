@@ -13,19 +13,21 @@ export function search (el) {
       search.value = ''
       submit.setAttribute('disabled', 'disabled')
       submit.style.opacity = 0
+      setTimeout(() => {
+        search.value = ''
+      }, 450)
     } else {
       container.style.height = '162px'
       setTimeout(() => {
         submit.style.opacity = 0.5
         search.style.opacity = 1
         search.focus()
-      }, 125)
+      }, 150)
     }
     open = !open
   }
 
   function change () {
-    console.log(search.value)
     if (search.value) {
       submit.style.opacity = 1
       submit.removeAttribute('disabled')
@@ -38,6 +40,7 @@ export function search (el) {
   function init () {
     button.addEventListener('click', toggle)
     search.addEventListener('keyup', change)
+    submit.addEventListener('click', toggle)
   }
 
   return { init }
