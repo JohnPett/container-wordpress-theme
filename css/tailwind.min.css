@@ -719,15 +719,15 @@ body {
 h1 {
   font-family: Avenir Next LT Pro Bold, sans-serif;
   font-size: 3.75rem;
-  line-height: 1;
   font-weight: 700;
+  line-height: 1.25;
 }
 
 h2 {
   font-family: Avenir Next LT Pro Bold, sans-serif;
   font-size: 3rem;
-  line-height: 1;
   font-weight: 700;
+  line-height: 1.25;
 }
 
 h3 {
@@ -735,6 +735,7 @@ h3 {
   font-size: 2.25rem;
   line-height: 2.5rem;
   font-weight: 700;
+  line-height: 1.25;
 }
 
 h4 {
@@ -742,6 +743,7 @@ h4 {
   font-size: 1.875rem;
   line-height: 2.25rem;
   font-weight: 700;
+  line-height: 1.25;
 }
 
 h5 {
@@ -749,6 +751,7 @@ h5 {
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 700;
+  line-height: 1.25;
 }
 
 h6 {
@@ -756,11 +759,13 @@ h6 {
   font-size: 1.25rem;
   line-height: 1.75rem;
   font-weight: 700;
+  line-height: 1.25;
 }
 
 blockquote {
   font-size: 1.25rem;
   line-height: 1.75rem;
+  line-height: 1.25;
 }
 
 input[type=search]::-ms-clear { display: none; width : 0; height: 0; }
