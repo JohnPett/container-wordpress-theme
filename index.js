@@ -470,7 +470,7 @@ var setupModules = (className, include) => {
 var initSite = () => {
   setupModules("header", header);
   setupModules("search", search);
-  import_imagesloaded.default(document, function() {
+  import_imagesloaded.default([...document.querySelectorAll("img")], function() {
     import_text_balancer.default.balanceText();
     document.querySelector("body").style.opacity = 1;
   });

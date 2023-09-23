@@ -15,7 +15,7 @@ const setupModules = (className, include) => {
 const initSite = () => {
   setupModules('header', header)
   setupModules('search', search)
-  imagesLoaded(document, function () {
+  imagesLoaded([...document.querySelectorAll('img')], function () {
     textBalancer.balanceText()
     document.querySelector('body').style.opacity = 1
   })
