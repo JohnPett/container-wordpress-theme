@@ -58,6 +58,10 @@ h6 {
   @apply text-xl font-bold;
 }
 
+blockquote {
+  @apply text-xl border-l-4 border-gray-400 pl-4;
+}
+
 input[type=search]::-ms-clear { display: none; width : 0; height: 0; }
 input[type=search]::-ms-reveal { display: none; width : 0; height: 0; }
 

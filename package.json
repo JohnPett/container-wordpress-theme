@@ -23,6 +23,7 @@
     "tailwindcss": "^3.3.3"
   },
   "dependencies": {
+    "imagesloaded": "^5.0.0",
     "text-balancer": "^1.0.5"
   }
 }

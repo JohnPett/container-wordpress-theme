@@ -12,7 +12,7 @@
     <?php wp_head(); ?>
 </head>
 
-<body class="bg-gray-100">
+<body class="bg-gray-100 opacity-0 ease-in-out duration-600">
   <header class="header flex content-center justify-center bg-white h-[100px] fixed z-10 w-full top-0 shadow-md">
     <nav class="w-[90%] flex content-center justify-between max-w-screen-xl h-full">
       <div class="flex h-full">
