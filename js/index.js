@@ -17,7 +17,7 @@ const initSite = () => {
   setupModules('search', search)
   imagesLoaded([...document.querySelectorAll('img')], function () {
     textBalancer.balanceText()
-    document.querySelector('body').style.opacity = 1
+    document.body.style.opacity = 1
   })
 }
 

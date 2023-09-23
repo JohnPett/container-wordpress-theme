@@ -3,9 +3,9 @@
   "module": "index.js",
   "scripts": {
     "start": "bun run dev",
-    "js-dev": "bun build ./js/index.js --outdir ./ --watch",
+    "js-dev": "bun build ./js/index.js --outdir ./ --entry-naming index.min.js --watch",
     "css-dev": "postcss css/tailwind.css -o css/tailwind.min.css --watch",
-    "js-prd": "bun build ./js/index.js --outdir ./ --minify",
+    "js-prd": "bun build ./js/index.js --outdir ./ --entry-naming index.min.js --minify",
     "css-prd": "tailwindcss -i css/tailwind.css -o css/tailwind.min.css --minify",
     "lint": "eslint js/**/*.js --fix",
     "dev": "concurrently \"bun run css-dev\" \"bun run js-dev\"",

@@ -3,7 +3,7 @@
     Add and enqueue CSS and JS to the <header>
   */
   function add_scripts() {
-    wp_enqueue_script('script', get_stylesheet_directory_uri() . '/index.js', null, null);
+    wp_enqueue_script('script', get_stylesheet_directory_uri() . '/index.min.js', null, null);
     wp_enqueue_style( 'style', get_stylesheet_uri() );
   }
   add_action('wp_enqueue_scripts', 'add_scripts');
