@@ -6,7 +6,7 @@
     "js-dev": "bun build ./js/index.js --outdir ./ --watch",
     "css-dev": "postcss css/tailwind.css -o css/tailwind.min.css --watch",
     "js-prd": "bun build ./js/index.js --outdir ./ --minify",
-    "css-prd": "postcss css/tailwind.css -o css/tailwind.min.css --minify",
+    "css-prd": "tailwindcss -i css/tailwind.css -o css/tailwind.min.css --minify",
     "lint": "eslint js/**/*.js --fix",
     "dev": "concurrently \"bun run css-dev\" \"bun run js-dev\"",
     "prd": "bun run css-prd && bun run js-prd && bun run lint"
@@ -21,5 +21,8 @@
     "eslint-plugin-promise": "^6.1.1",
     "postcss-cli": "^10.1.0",
     "tailwindcss": "^3.3.3"
+  },
+  "dependencies": {
+    "text-balancer": "^1.0.5"
   }
 }

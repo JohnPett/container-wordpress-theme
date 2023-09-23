@@ -13,16 +13,16 @@
 </head>
 
 <body class="bg-gray-100">
-  <header class="header flex content-center justify-center bg-white h-[100px]">
+  <header class="header flex content-center justify-center bg-white h-[100px] fixed z-10 w-full top-0 shadow-md">
     <nav class="w-[90%] flex content-center justify-between max-w-screen-xl h-full">
       <div class="flex h-full">
-        <?php get_template_part('includes/logo'); ?>
-        <?php get_template_part('includes/menu'); ?>
+        <?php get_template_part('includes/header/logo'); ?>
+        <?php get_template_part('includes/header/menu'); ?>
       </div>
       <div class="flex justify-center content-center flex-wrap">
-        <?php get_template_part('includes/language'); ?>
-        <?php get_template_part('includes/search'); ?>
-        <?php get_template_part('includes/button'); ?>
+        <?php get_template_part('includes/header/language'); ?>
+        <?php get_template_part('includes/header/search'); ?>
+        <?php get_template_part('includes/header/button'); ?>
       </div>
     </nav>
   </header>
