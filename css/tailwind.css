@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 @font-face {
   font-family: 'Avenir Next LT Pro Regular';
   src: url('../fonts/AvenirNextLTPro-Regular.woff2') format('woff2'),
@@ -32,6 +27,35 @@ body {
   font-weight: bold;
   font-style: normal;
   font-display: block;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  @apply text-6xl font-bold;
+}
+
+h2 {
+  @apply text-5xl font-bold;
+}
+
+h3 {
+  @apply text-4xl font-bold;
+}
+
+h4 {
+  @apply text-3xl font-bold;
+}
+
+h5 {
+  @apply text-2xl font-bold;
+}
+
+h6 {
+  @apply text-xl font-bold;
 }
 
 input[type=search]::-ms-clear { display: none; width : 0; height: 0; }

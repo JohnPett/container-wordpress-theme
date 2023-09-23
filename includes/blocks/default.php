@@ -10,7 +10,7 @@
       echo ' />';
     }
     if ($text) {
-      echo '<div class="[&:has([style*=center])]:justify-center w-[90%] relative z-5 flex flex-wrap">';
+      echo '<div class="[&:has([style*=center])]:justify-center [&:has([style*=right])]:justify-end w-[90%] relative z-5 flex flex-wrap">';
         echo '<div class="font-regular balance-text text-white py-28">' . $text . '</div>';
       echo '</div>';
     }

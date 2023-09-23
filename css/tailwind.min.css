@@ -678,11 +678,6 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-body {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 @font-face {
   font-family: 'Avenir Next LT Pro Regular';
   src: url('../fonts/AvenirNextLTPro-Regular.woff2') format('woff2'),
@@ -708,6 +703,53 @@ body {
   font-weight: bold;
   font-style: normal;
   font-display: block;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-family: Avenir Next LT Pro Bold, sans-serif;
+  font-size: 3.75rem;
+  line-height: 1;
+  font-weight: 700;
+}
+
+h2 {
+  font-family: Avenir Next LT Pro Bold, sans-serif;
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 700;
+}
+
+h3 {
+  font-family: Avenir Next LT Pro Bold, sans-serif;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+}
+
+h4 {
+  font-family: Avenir Next LT Pro Bold, sans-serif;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+}
+
+h5 {
+  font-family: Avenir Next LT Pro Bold, sans-serif;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+}
+
+h6 {
+  font-family: Avenir Next LT Pro Bold, sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 700;
 }
 
 input[type=search]::-ms-clear { display: none; width : 0; height: 0; }
@@ -747,6 +789,10 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 .\[\&\:has\(\[style\*\=center\]\)\]\:justify-center:has([style*=center]) {
   justify-content: center;
+}
+
+.\[\&\:has\(\[style\*\=right\]\)\]\:justify-end:has([style*=right]) {
+  justify-content: flex-end;
 }
 
 
