@@ -680,12 +680,6 @@ video {
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.\[text-shadow\:_0_0_15px_rgb\(0_0_0_\/_80\%\)\] {
-  text-shadow: 0 0 15px rgb(0 0 0 / 80%);
-}
-.\[text-shadow\:_0_0_15px_rgb\(0_0_0_\/_70\%\)\] {
-  text-shadow: 0 0 15px rgb(0 0 0 / 70%);
-}
 .\[text-shadow\:_0_0_15px_rgb\(0_0_0_\/_50\%\)\] {
   text-shadow: 0 0 15px rgb(0 0 0 / 50%);
 }
