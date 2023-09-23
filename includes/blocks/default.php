@@ -11,7 +11,7 @@
     }
     if ($text) {
       echo '<div class="[&:has([style*=center])]:justify-center [&:has([style*=right])]:justify-end w-[90%] relative z-5 flex flex-wrap';
-        if ($background) { echo ' [text-shadow:_0_0_15px_rgb(0_0_0_/_80%)]'; }
+        if ($background) { echo ' [text-shadow:_0_0_15px_rgb(0_0_0_/_50%)]'; }
       echo '">';
         echo '<div class="max-w-prose">';
           echo '<div class="font-regular balance-text text-white py-28">' . $text . '</div>';
