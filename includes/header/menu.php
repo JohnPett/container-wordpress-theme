@@ -1,4 +1,4 @@
-<ul class="flex justify-center content-center flex-wrap">
+<ul class="hidden lg:flex justify-center content-center flex-wrap">
   <?php
     $menu_items = wp_get_nav_menu_items('Main Menu');
     foreach($menu_items as $item) {
